@@ -1,6 +1,7 @@
 package com.ms.envioemail.models;
 
 
+import com.ms.envioemail.enums.StatusEmail;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -23,6 +24,6 @@ public class EmailModel implements Serializable {
     @Column(columnDefinition = "TEXT")
     private String text;
     private LocalDateTime sendDateEmail;
-   // private StatusEmail statusEmail;
+   private StatusEmail statusEmail;
 
 }
