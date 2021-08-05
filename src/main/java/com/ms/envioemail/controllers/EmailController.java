@@ -17,7 +17,7 @@ import javax.validation.Valid;
 public class EmailController {
     @Autowired
     EmailService emailService;
-    @PostMapping("/sendind-email")
+    @PostMapping("/sending-email")
     public ResponseEntity<EmailModel>sendingEmail(@RequestBody @Valid EmailDto emailDto){
         EmailModel emailModel = new EmailModel();
         BeanUtils.copyProperties(emailDto, emailModel);
